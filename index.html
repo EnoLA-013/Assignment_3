@@ -37,12 +37,12 @@
   </head>
   <body class="manrope-font">
     <header
-      class="max-w-7xl mx-auto bg-gradient-to-r from-gray-100 to-white px-6 lg:px-20"
+      class="max-w-7xl mx-auto bg-gradient-to-r from-gray-100 to-white"
     >
       <nav>
-        <div class="flex self-center justify-around pt-10">
+        <div class="flex self-center px-6 lg:px-0 justify-between lg:justify-around pt-10">
           <!-- nav left -->
-          <span class="inline-flex self-center">
+          <button class="inline-flex self-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -58,15 +58,15 @@
               />
             </svg>
             <span class="text-3xl font-extrabold">Rinterio</span>
-          </span>
-          <ul class="flex self-center">
+          </button>
+          <ul class="hidden lg:flex self-center">
             <li class="p-6 font-bold"><a href="">Home</a></li>
             <li class="p-6"><a href="">Services</a></li>
             <li class="p-6"><a href="">Portfolio</a></li>
             <li class="p-6"><a href="">Blogs</a></li>
             <li class="p-6"><a href="">Contact us</a></li>
           </ul>
-          <span class="flex">
+          <span class="hidden lg:flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -115,6 +115,21 @@
               </svg>
             </button>
           </span>
+          <!-- small device bars -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="block lg:hidden size-10 self-center rounded-full border border-gray-100 bg-white p-1.5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
         </div>
       </nav>
       <!-- banner section -->
@@ -426,7 +441,7 @@
     <!-- Article and news -->
     <section class="max-w-7xl mx-auto bg-neutral-200 pt-8 pb-8 lg:pb-20">
       <div class="px-6 lg:px-20 pt-6 lg:pt-16 text-center">
-          <button
+        <button
           class="font-bold text-base rounded-full bg-lime-200 flex pl-2 pr-4 py-1.5 gap-1 mx-auto"
         >
           <svg
@@ -459,7 +474,11 @@
       >
         <div class="card bg-base-100 w-auto shadow-xl">
           <figure>
-            <img class="w-full lg:w-auto p-6 lg:p-6" src="images/article1.png" alt="Shoes" />
+            <img
+              class="w-full lg:w-auto p-6 lg:p-6"
+              src="images/article1.png"
+              alt="Shoes"
+            />
           </figure>
           <div class="card-body">
             <ul class="flex gap-2 -mt-11">
@@ -529,7 +548,11 @@
         <!-- 2nd card -->
         <div class="card bg-base-100 w-auto shadow-xl">
           <figure>
-            <img class="w-full lg:w-auto p-6 lg:p-6" src="images/article2.png" alt="Shoes" />
+            <img
+              class="w-full lg:w-auto p-6 lg:p-6"
+              src="images/article2.png"
+              alt="Shoes"
+            />
           </figure>
           <div class="card-body">
             <ul class="flex gap-2 -mt-11">
@@ -599,7 +622,11 @@
         <!-- 3rd card -->
         <div class="card bg-base-100 w-auto shadow-xl">
           <figure>
-            <img class="w-full lg:w-auto p-6 lg:p-6" src="images/article3.png" alt="Shoes" />
+            <img
+              class="w-full lg:w-auto p-6 lg:p-6"
+              src="images/article3.png"
+              alt="Shoes"
+            />
           </figure>
           <div class="card-body">
             <ul class="flex gap-2 -mt-11">
@@ -669,7 +696,9 @@
       </div>
     </section>
     <!-- form box -->
-    <section class="max-w-7xl mx-auto bg-[url('/images/bg.jpg')] border border-white">
+    <section
+      class="max-w-7xl mx-auto bg-[url('/images/bg.jpg')] border border-white"
+    >
       <div class="px-6 lg:px-20 pt-6 lg:pt-20 text-center">
         <button
           class="font-bold text-base rounded-full bg-lime-200 flex pl-2 pr-4 py-1.5 gap-1 mx-auto"
@@ -736,25 +765,82 @@
             class="textarea mt-4 h-52 w-full max-w-6xl rounded-3xl"
           ></textarea>
           <button
-              class="bg-[#ABEF5F] rounded-full mt-6 w-full py-2 self-center text-sm font-extrabold"
+            class="bg-[#ABEF5F] rounded-full mt-6 w-full py-2 self-center text-sm font-extrabold"
+          >
+            Send Mail
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 inline self-center mx-1 bg-black text-[#ABEF5F] rounded-full p-1.5"
             >
-              Send Mail
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6 inline self-center mx-1 bg-black text-[#ABEF5F] rounded-full p-1.5"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                />
-              </svg>
-            </button>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </button>
         </div>
+      </div>
+    </section>
+    <!-- footer part -->
+    <section class="max-w-7xl mx-auto bg-[#1C1C1C] px-6 lg:px-20">
+      <div class="pt-8 lg:pt-20 text-center">
+        <button class="inline-flex self-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-9 self-center mx-1 bg-[#ABEF5F] rounded-full p-1.5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+            />
+          </svg>
+          <span class="text-3xl font-extrabold text-white">Rinterio</span>
+        </button>
+        <p class="text-sm font-medium text-center text-gray-200 pt-3">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, <br />
+          featuring weathered wood, sleek metal accents.
+        </p>
+      </div>
+      <div class="mt-8">
+        <ul class="text-center lg:flex self-center justify-center">
+          <li class="p-6 font-bold text-gray-200"><a href="">Home</a></li>
+          <li class="p-6 text-gray-200"><a href="">Services</a></li>
+          <li class="p-6 text-gray-200"><a href="">Portfolio</a></li>
+          <li class="p-6 text-gray-200"><a href="">Blogs</a></li>
+          <li class="p-6 text-gray-200"><a href="">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="p-3 lg:p-6 text-center">
+        <button
+          class="bg-[#ABEF5F] rounded-full w-full lg:w-auto px-5 py-2 self-center text-sm font-extrabold"
+        >
+          Book Consult
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 inline self-center mx-1 bg-black text-[#ABEF5F] rounded-full p-1.5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+            />
+          </svg>
+        </button>
       </div>
     </section>
   </body>
